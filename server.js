@@ -8,7 +8,7 @@ const { message } = require("statuses");
 const userRouter = require('./src/routes/user')
 const postRouter = require('./src/routes/post')
 
-const port = 5000;
+const PORT = process.env.PORT || 5000;
 connectDB();
 
 // Adding MiddleWare
@@ -26,6 +26,6 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(port, () => {
-  console.log(`Example App listening @ http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Example App listening @ http://localhost:${PORT}`);
 });
