@@ -1,6 +1,5 @@
 // Route
 const express = require("express");
-const { errorMonitor } = require("node:events");
 const authGuard = require("../middleware/authGuard");
 const User = require("../model/User");
 
